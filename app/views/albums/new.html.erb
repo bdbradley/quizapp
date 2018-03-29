@@ -1,0 +1,11 @@
+<br>
+<div class="booyah-box">
+  <h1>Enter Your Album Details</h1>
+  <%= simple_form_for @album do |f| %>
+    <%= f.input :name %>
+    <%= f.input :year %>
+    <%= f.input :album %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+</div>

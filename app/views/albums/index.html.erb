@@ -1,0 +1,18 @@
+<br>
+<h1>Album List</h1>
+<div class="container">
+  <div class=row>
+    <div class="col-md-12 text-center"> 
+      <button type="button" class="btn"><h2><%= link_to 'Create a new entry', new_album_path %></h2></button>
+    </div>
+  </div>
+</div>
+<br />
+<% @albums.each do |album| %>
+  <div class="booyah-box">
+    <h1><%= album.name %></h1>
+    <h2><%= album.year %></h2>
+    <h2><%= album.album %></h2>
+  </div>
+<% end %>
+
